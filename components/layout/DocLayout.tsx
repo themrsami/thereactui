@@ -274,27 +274,6 @@ export function DocLayout({ children }: DocLayoutProps) {
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 h-16 border-b border-current bg-foreground z-50">
-        <div className="flex items-center justify-between h-full px-6">
-          <div className="flex items-center gap-4">
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-              className="lg:hidden text-background hover:bg-background hover:text-foreground"
-            >
-              <Menu size={16} />
-            </Button>
-            <Link href="/" className="text-xl font-bold text-background cursor-pointer">
-              theReactUI
-            </Link>
-          </div>
-          <ThemeDropdown theme={theme} setTheme={setTheme} />
-        </div>
-      </header>
-
       {/* Mobile overlay */}
       {isSidebarOpen && (
         <div 
@@ -303,7 +282,7 @@ export function DocLayout({ children }: DocLayoutProps) {
         />
       )}
 
-      {/* Sidebar */}
+      {/* Sidebar - adjusted for global navbar */}
       <Sidebar 
         navigation={navigation} 
         pathname={pathname} 
@@ -311,9 +290,22 @@ export function DocLayout({ children }: DocLayoutProps) {
         onClose={() => setIsSidebarOpen(false)}
       />
 
-      {/* Main Content */}
-      <main className="lg:ml-64 pt-16">
+      {/* Main Content - adjusted for global navbar */}
+      <main className="lg:ml-64 pt-4">
         <div className="max-w-4xl mx-auto p-8">
+          {/* Mobile menu button for DocLayout pages */}
+          <div className="lg:hidden mb-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+              className="flex items-center gap-2 text-foreground hover:bg-foreground hover:text-background"
+            >
+              <Menu size={16} />
+              <span>Menu</span>
+            </Button>
+          </div>
+          
           <Breadcrumb items={generateBreadcrumbs()} className="mb-6" />
           {children}
         </div>

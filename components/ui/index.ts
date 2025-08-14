@@ -31,3 +31,6 @@ export type { BadgeProps } from './Badge';
 
 export { Tooltip } from './Tooltip';
 export type { TooltipProps } from './Tooltip';
+
+// Search Modal
+export { ComponentSearchModal } from './ComponentSearchModal';
