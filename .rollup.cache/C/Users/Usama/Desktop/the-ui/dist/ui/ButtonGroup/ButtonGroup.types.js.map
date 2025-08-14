@@ -1,1 +1,0 @@
-{"version":3,"file":"ButtonGroup.types.js","sourceRoot":"","sources":["../../../components/ui/ButtonGroup/ButtonGroup.types.ts"],"names":[],"mappings":"","sourcesContent":["export interface ButtonGroupProps {\r\n  children: React.ReactNode;\r\n  orientation?: 'horizontal' | 'vertical';\r\n  className?: string;\r\n}\r\n"]}

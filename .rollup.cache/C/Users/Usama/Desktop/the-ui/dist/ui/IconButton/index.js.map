@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../components/ui/IconButton/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC","sourcesContent":["export { IconButton } from './IconButton';\r\nexport type { IconButtonProps } from './IconButton.types';\r\n"]}

@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../components/ui/Breadcrumb/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC","sourcesContent":["export { Breadcrumb } from './Breadcrumb';\r\nexport type { BreadcrumbProps, BreadcrumbItem } from './Breadcrumb.types';\r\n"]}

@@ -20,6 +20,9 @@
 # production
 /build
 
+# rollup cache
+.rollup.cache/
+
 # misc
 .DS_Store
 *.pem
