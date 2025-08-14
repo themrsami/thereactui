@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../components/ui/Tooltip/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC","sourcesContent":["export { Tooltip } from './Tooltip';\r\nexport type { TooltipProps } from './Tooltip.types';\r\n"]}

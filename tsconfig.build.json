@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "target": "es2018",
+    "lib": ["es2018", "dom"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": [
+    "components/**/*"
+  ],
+  "exclude": [
+    "app/**/*",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "dist/**/*"
+  ]
+}

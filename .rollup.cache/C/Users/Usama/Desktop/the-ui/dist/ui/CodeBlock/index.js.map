@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../components/ui/CodeBlock/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC","sourcesContent":["export { CodeBlock } from './CodeBlock';\r\nexport type { CodeBlockProps } from './CodeBlock.types';\r\n"]}

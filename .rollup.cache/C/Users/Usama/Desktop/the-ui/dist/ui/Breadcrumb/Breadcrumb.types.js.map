@@ -1,0 +1,1 @@
+{"version":3,"file":"Breadcrumb.types.js","sourceRoot":"","sources":["../../../components/ui/Breadcrumb/Breadcrumb.types.ts"],"names":[],"mappings":"","sourcesContent":["export interface BreadcrumbItem {\r\n  label: string;\r\n  href?: string;\r\n}\r\n\r\nexport interface BreadcrumbProps {\r\n  items: BreadcrumbItem[];\r\n  className?: string;\r\n}\r\n"]}

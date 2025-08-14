@@ -1,0 +1,286 @@
+@import "tailwindcss";
+
+/* theReactUI Design System - Pure Black & White */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --border: #000000;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --border: #ffffff;
+}
+
+/* Custom utility classes for theReactUI */
+.bg-background {
+  background-color: var(--background);
+}
+
+.bg-foreground {
+  background-color: var(--foreground);
+}
+
+.text-background {
+  color: var(--background);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.border-background {
+  border-color: var(--background);
+}
+
+.border-foreground {
+  border-color: var(--foreground);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition: none; /* No transitions for theReactUI minimalism */
+}
+
+/* Code styling for theReactUI */
+pre, code {
+  font-family: 'Courier New', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+pre {
+  background: var(--foreground);
+  color: var(--background);
+  border: 1px solid var(--foreground);
+  padding: 0 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+code:not(pre code) {
+  background: var(--foreground);
+  color: var(--background);
+  padding: 0.125rem 0.25rem;
+  border: 1px solid var(--foreground);
+}
+
+/* Code block wrapper for better styling */
+.code-window {
+  border: 1px solid var(--foreground);
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: var(--foreground);
+}
+
+.dark .code-window {
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.code-window-header {
+  background: var(--background);
+  color: var(--foreground);
+  border-bottom: 1px solid var(--foreground);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.code-window-content {
+  background: var(--foreground);
+  color: var(--background);
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.code-window-content pre {
+  margin: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.code-window-content code {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Copy button styling inside code blocks */
+.code-window-content .copy-button,
+.code-window-content button {
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+  border: 1px solid var(--background) !important;
+}
+
+.code-window-content .copy-button:hover,
+.code-window-content button:hover {
+  background: var(--foreground) !important;
+  color: var(--background) !important;
+  border: 1px solid var(--background) !important;
+}
+
+/* Navbar theme button styling */
+.navbar-theme-button {
+  background: transparent !important;
+  color: var(--background) !important;
+  border: none !important;
+}
+
+.navbar-theme-button:hover {
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+  border: none !important;
+}
+
+/* theReactUI Prism.js Syntax Highlighting Theme */
+/* Base code styling */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: var(--background);
+  background: var(--foreground);
+  font-family: 'Courier New', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* Light theme syntax colors */
+:root {
+  --syntax-keyword: #60a5fa;      /* Light blue for keywords */
+  --syntax-string: #4ade80;       /* Light green for strings */
+  --syntax-comment: #9ca3af;      /* Light gray for comments */
+  --syntax-number: #fbbf24;       /* Light orange for numbers */
+  --syntax-operator: #a78bfa;     /* Light purple for operators */
+  --syntax-punctuation: #c3cbd4;  /* Light slate gray for punctuation */
+  --syntax-function: #f87171;     /* Light red for function names */
+  --syntax-variable: #22d3ee;     /* Light cyan for variables */
+  --syntax-tag: #f472b6;          /* Light pink for HTML/JSX tags */
+  --syntax-attribute: #34d399;    /* Light emerald for attributes */
+}
+
+/* Dark theme syntax colors */
+.dark {
+  --syntax-keyword: #0066cc;      /* Blue for keywords (function, const, let, etc.) */
+  --syntax-string: #22c55e;       /* Green for strings */
+  --syntax-comment: #6b7280;      /* Gray for comments */
+  --syntax-number: #f59e0b;       /* Orange for numbers */
+  --syntax-operator: #8b5cf6;     /* Purple for operators */
+  --syntax-punctuation: #2c2a2a;  /* White for punctuation */
+  --syntax-function: #ef4444;     /* Red for function names */
+  --syntax-variable: #06b6d4;     /* Cyan for variables */
+  --syntax-tag: #ec4899;          /* Pink for HTML/JSX tags */
+  --syntax-attribute: #10b981;    /* Emerald for attributes */
+}
+
+/* Syntax highlighting tokens */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: var(--syntax-punctuation);
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--syntax-number);
+  font-weight: 500;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--syntax-string);
+  font-weight: 500;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--syntax-operator);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--syntax-keyword);
+  font-weight: 600;
+}
+
+.token.function,
+.token.class-name {
+  color: var(--syntax-function);
+  font-weight: 600;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--syntax-variable);
+  font-weight: 500;
+}
+
+/* Special highlighting for JSX */
+.token.tag .token.punctuation,
+.token.tag .token.script-punctuation {
+  color: var(--syntax-punctuation);
+}
+
+.token.tag .token.tag {
+  color: var(--syntax-tag);
+  font-weight: 600;
+}
+
+.token.tag .token.attr-name {
+  color: var(--syntax-attribute);
+  font-weight: 500;
+}
+
+.token.tag .token.attr-value {
+  color: var(--syntax-string);
+}
+
+/* Line highlighting and selection */
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  background: var(--background);
+  color: var(--foreground);
+}

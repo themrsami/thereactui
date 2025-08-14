@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../components/ui/Badge/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC","sourcesContent":["export { Badge } from './Badge';\r\nexport type { BadgeProps } from './Badge.types';\r\n"]}

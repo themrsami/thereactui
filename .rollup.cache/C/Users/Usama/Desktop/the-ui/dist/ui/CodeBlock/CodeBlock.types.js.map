@@ -1,0 +1,1 @@
+{"version":3,"file":"CodeBlock.types.js","sourceRoot":"","sources":["../../../components/ui/CodeBlock/CodeBlock.types.ts"],"names":[],"mappings":"","sourcesContent":["export interface CodeBlockProps {\r\n  children: string;\r\n  language?: string;\r\n  filename?: string;\r\n  className?: string;\r\n}\r\n"]}

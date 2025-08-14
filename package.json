@@ -1,0 +1,76 @@
+{
+  "name": "thereactui",
+  "version": "1.2.0",
+  "type": "module",
+  "description": "Lightning fast minimalist UI library with pure black & white design - no backgrounds, only borders, no border radius",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themrsami/thereactui"
+  },
+  "bugs": {
+    "url": "https://github.com/themrsami/thereactui/issues"
+  },
+  "author": "themrsami <usamanazir13@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "react",
+    "components",
+    "tailwind",
+    "minimalist",
+    "thereactui",
+    "design-system",
+    "typescript",
+    "black-white",
+    "no-background",
+    "borders-only",
+    "tooltip",
+    "modal",
+    "card",
+    "badge"
+  ],
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "build:lib": "rollup -c",
+    "start": "next start",
+    "lint": "next lint",
+    "prepublishOnly": "pnpm run build:lib"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@types/prismjs": "^1.26.5",
+    "lucide-react": "^0.539.0",
+    "next-themes": "^0.4.6",
+    "prismjs": "^1.30.0",
+    "thereactui": "^1.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^15.3.1",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "next": "15.4.6",
+    "postcss": "^8.5.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "rollup": "^4.46.2",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tailwindcss": "^4",
+    "tslib": "^2.8.1",
+    "typescript": "^5"
+  }
+}
